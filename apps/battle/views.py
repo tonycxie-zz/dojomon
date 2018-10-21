@@ -45,7 +45,5 @@ def wild_encounter(request, number):
 
 def get_moves(request):
     pokemon = Pokemon.objects.get(name = request.POST["pokemon"])
-    print(pokemon.__dict__)
     moves = Moves.objects.filter(moves_pokemon = pokemon)
-    print(moves.values())
     return HttpResponse(serializers.serialize("json", moves), content_type = "application/json")
