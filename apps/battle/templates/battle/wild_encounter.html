@@ -24,7 +24,9 @@
                         <div class="enemy-healthpoints"></div>
                     </div>
                 </div>
-                <p class="health">{{ wild_pokemon.health }}/{{ wild_pokemon.health }}</p>
+                <p class="health">
+                    <span id="enemy-current-hp">{{ wild_pokemon.health }}</span>/{{ wild_pokemon.health }}
+                </p>
             </div>
             <img src="{{ wild_pokemon.front_sprite }}" class="front-sprite">
         </div>
@@ -38,7 +40,9 @@
                         <div class="my-healthpoints"></div>
                     </div>
                 </div>
-                <p class="health">{{ first_pokemon.health }}/{{ first_pokemon.health }}</p>
+                <p class="health">
+                    <span id="my-current-hp">{{ first_pokemon.health }}</span>/{{ first_pokemon.health }}
+                </p>
             </div>
         </div>
     </div>

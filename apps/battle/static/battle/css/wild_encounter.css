@@ -109,3 +109,13 @@ h3 {
     font-size: 25pt;
     border: none;
 }
+
+.display .row {
+    margin: 0;
+    height: 50%;
+}
+
+.display .col {
+    outline: 1px solid black;
+    text-align: center;
+}
